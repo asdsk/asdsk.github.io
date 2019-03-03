@@ -9,4 +9,6 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /lib/
 
-Sitemap: http://atan.online/sitemap.xml
+Sitemap: 
+  - http://atan.online/sitemap.xml
+  - http://atan.online/baidusitemap.xml
