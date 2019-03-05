@@ -33,4 +33,21 @@
         <tag>诗</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[测试]]></title>
+    <url>%2F2019%2F02%2F23%2F225%2F</url>
+    <content type="text"><![CDATA[OK!]]></content>
+      <categories>
+        <category>目录测试</category>
+        <category>目录测试2</category>
+      </categories>
+      <tags>
+        <tag>标签测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2019%2F02%2F15%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
