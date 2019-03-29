@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[“救心来了”项目硬件系统搭建——调试具体内容]]></title>
+    <url>%2F2019%2F03%2F29%2Fjiuxinlaile-tiaoshi%2F</url>
+    <content type="text"><![CDATA[###Arduino ###GPS模块 ###GSM模块 ###TFT模块 ###LED小模块 ###按钮 ###电源和稳压模块 ###其它]]></content>
+      <categories>
+        <category>救心来了 项目</category>
+      </categories>
+      <tags>
+        <tag>救心来了 项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[“救心来了”项目硬件系统搭建——接线具体内容]]></title>
+    <url>%2F2019%2F03%2F29%2Fjiuxinlaile-jiexian%2F</url>
+    <content type="text"><![CDATA[##以下为项目硬件的连线说明 Arduino GPS GSM TFT LED 按钮 备注 0 1 2 任一端 按钮按下作为中断信号，D2为中断口 3 VCC Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号 4 TX 此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端口 5 RX 6 5VTX 此处定义Arduino虚拟串口serial2,rx为6号端口,tx为7号端口 7 5VRX 8 5 9 6 10 7 11 4 12 13 3 A0 A1 A2 A3 A4 A5 3.3V 2、8 tft_8为使能端，一直用就接3.3v，其它接口看模块背面 ###Arduino Arduino的模拟口没有使用过 Arduino逻辑电路供电：5V——电源5V 除了按钮和LED模块外，其它模块将不从Arduino供电，否则模块无法使用，且烧坏Arduino###GPS模块 VCC接电源5V，GND接地 排针最好焊好###GSM模块 VCC接电源5V，GND接地 5VTX意思是5V时候的TX，在模块上标识为5VT。5VRX同理###TFT模块 ###LED小模块 如果没有LED小模块，用普通LED+4.7k电阻也可以###按钮 用其它种类按钮也可，点动且常开（与中断语句的设置有关）的按钮就行 一端接Arduino_D2，另一端则接GND###电源和稳压模块 电源是4*3.7V，可以提供足够功率，也需要接稳压模块。 电池正反极接错会马上爆火花，不要好奇想试试###其它 各模块的电源接线最好做成接口，用合适的小接口，直接开关会优雅一些#！！！重要 各模块共地接线]]></content>
+      <categories>
+        <category>救心来了 项目</category>
+      </categories>
+      <tags>
+        <tag>救心来了 项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[“救心来了”项目硬件系统搭建——硬件选型]]></title>
+    <url>%2F2019%2F03%2F29%2Fjiuxinlaile-yingjian%2F</url>
+    <content type="text"><![CDATA[#主控制器——Arduino Uno #GPS模块——NEO-6M和加长天线 #GSM模块——SIM900A #显示屏模块——1.77寸TFT显示屏 #电源模块——18650锂电池（尖帽）4枚和电池盒 #稳压模块——3361AS车载电瓶DC5V稳压 #小零件]]></content>
+      <categories>
+        <category>救心来了 项目</category>
+      </categories>
+      <tags>
+        <tag>救心来了 项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[复仇者联盟3的设定我觉得不合理]]></title>
     <url>%2F2019%2F03%2F19%2F3-18-2%2F</url>
     <content type="text"><![CDATA[我是一个喜欢看科幻片的人，因此自然也喜欢《复仇者联盟》系列。近日看了第4部的预告片以后，慢慢察觉到第3部的科幻设定并不“硬核”。 所谓“不硬核”，是指在背后支撑剧情设定的那些东西，太简单了。 灭霸]]></content>

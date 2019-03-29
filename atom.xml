@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://atan.online/"/>
-  <updated>2019-03-19T02:40:36.432Z</updated>
+  <updated>2019-03-29T15:23:19.000Z</updated>
   <id>http://atan.online/</id>
   
   <author>
@@ -15,6 +15,96 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“救心来了”项目硬件系统搭建——调试具体内容</title>
+    <link href="http://atan.online/2019/03/29/jiuxinlaile-tiaoshi/"/>
+    <id>http://atan.online/2019/03/29/jiuxinlaile-tiaoshi/</id>
+    <published>2019-03-29T15:23:19.000Z</published>
+    <updated>2019-03-29T15:23:19.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>###Arduino</p><ul><li>###GPS模块</li><li>###GSM模块</li><li>###TFT模块</li><li>###LED小模块</li><li>###按钮</li><li>###电源和稳压模块</li><li>###其它</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###Arduino&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;###GPS模块&lt;/li&gt;
+&lt;li&gt;###GSM模块&lt;/li&gt;
+&lt;li&gt;###TFT模块&lt;/li&gt;
+&lt;li&gt;###LED小模块&lt;/li&gt;
+&lt;li&gt;###按钮&lt;/li&gt;
+&lt;li&gt;###电源和稳压模块&lt;/li&gt;
+&lt;li&gt;###其它
+      
+    
+    </summary>
+    
+      <category term="救心来了 项目" scheme="http://atan.online/categories/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="救心来了 项目" scheme="http://atan.online/tags/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“救心来了”项目硬件系统搭建——接线具体内容</title>
+    <link href="http://atan.online/2019/03/29/jiuxinlaile-jiexian/"/>
+    <id>http://atan.online/2019/03/29/jiuxinlaile-jiexian/</id>
+    <published>2019-03-29T06:31:47.000Z</published>
+    <updated>2019-03-29T06:31:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>##以下为项目硬件的连线说明</p><table><thead><tr><th style="text-align:center">Arduino</th><th style="text-align:center">GPS</th><th style="text-align:center">GSM</th><th style="text-align:center">TFT</th><th style="text-align:center">LED</th><th style="text-align:center">按钮</th><th style="text-align:center">备注</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">1</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">2</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">任一端</td><td style="text-align:center">按钮按下作为中断信号，D2为中断口</td></tr><tr><td style="text-align:center">3</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">VCC</td><td style="text-align:center"></td><td style="text-align:center">Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号</td></tr><tr><td style="text-align:center">4</td><td style="text-align:center">TX</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端口</td></tr><tr><td style="text-align:center">5</td><td style="text-align:center">RX</td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">6</td><td style="text-align:center"></td><td style="text-align:center">5VTX</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">此处定义Arduino虚拟串口serial2,rx为6号端口,tx为7号端口</td></tr><tr><td style="text-align:center">7</td><td style="text-align:center"></td><td style="text-align:center">5VRX</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">8</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">5</td></tr><tr><td style="text-align:center">9</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">6</td></tr><tr><td style="text-align:center">10</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">7</td></tr><tr><td style="text-align:center">11</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">4</td></tr><tr><td style="text-align:center">12</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">13</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">3</td></tr><tr><td style="text-align:center">A0</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">A1</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">A2</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">A3</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">A4</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">A5</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td></tr><tr><td style="text-align:center">3.3V</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">2、8</td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center">tft_8为使能端，一直用就接3.3v，其它接口看模块背面</td></tr></tbody></table><p><br></p><p>###Arduino</p><ul><li>Arduino的模拟口没有使用过</li><li>Arduino逻辑电路供电：5V——电源5V</li><li>除了按钮和LED模块外，其它模块将不从Arduino供电，否则模块无法使用，且烧坏Arduino<br>###GPS模块</li><li>VCC接电源5V，GND接地</li><li>排针最好焊好<br>###GSM模块</li><li>VCC接电源5V，GND接地</li><li>5VTX意思是5V时候的TX，在模块上标识为5VT。5VRX同理<br>###TFT模块</li><li>###LED小模块</li><li>如果没有LED小模块，用普通LED+4.7k电阻也可以<br>###按钮</li><li>用其它种类按钮也可，点动且常开（与中断语句的设置有关）的按钮就行</li><li>一端接Arduino_D2，另一端则接GND<br>###电源和稳压模块</li><li>电源是4*3.7V，可以提供足够功率，也需要接稳压模块。</li><li>电池正反极接错会马上爆火花，不要好奇想试试<br>###其它</li><li>各模块的电源接线最好做成接口，用合适的小接口，直接开关会优雅一些<br>#！！！重要</li><li><strong>各模块共地接线</strong></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##以下为项目硬件的连线说明&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Arduino&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;GPS&lt;/th&gt;
+&lt;th style=&quot;text
+      
+    
+    </summary>
+    
+      <category term="救心来了 项目" scheme="http://atan.online/categories/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="救心来了 项目" scheme="http://atan.online/tags/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>“救心来了”项目硬件系统搭建——硬件选型</title>
+    <link href="http://atan.online/2019/03/29/jiuxinlaile-yingjian/"/>
+    <id>http://atan.online/2019/03/29/jiuxinlaile-yingjian/</id>
+    <published>2019-03-29T04:35:52.000Z</published>
+    <updated>2019-03-29T04:35:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#主控制器——Arduino Uno<br><img src="/2019/03/29/jiuxinlaile-yingjian/Arduino_UNO_R3.JPG" title="Arduino UNO R3板载资源布局"></p><p>#GPS模块——NEO-6M和加长天线<br><img src="/2019/03/29/jiuxinlaile-yingjian/GPS.JPG" title="GPS模块" width="20%" height="20%" div align="center"><br><img src="/2019/03/29/jiuxinlaile-yingjian/GPStianxian.JPG" width="35%" height="35%" div align="center"></p><p>#GSM模块——SIM900A<br><img src="/2019/03/29/jiuxinlaile-yingjian/SIM900A.JPG" title="SIM900A"></p><p>#显示屏模块——1.77寸TFT显示屏<br><img src="/2019/03/29/jiuxinlaile-yingjian/tft1.JPG" title="TFT显示屏正面" width="200" height="260" div align="center"><br><img src="/2019/03/29/jiuxinlaile-yingjian/tft2.JPG" title="TFT显示屏背面" width="200" height="260" div align="center"></p><p>#电源模块——18650锂电池（尖帽）4枚和电池盒<br><img src="/2019/03/29/jiuxinlaile-yingjian/dianchi2.JPG" title="18650电池" width="200" height="260" div align="center"><br><img src="/2019/03/29/jiuxinlaile-yingjian/dianchihe2.JPG" title="18650电池盒 四节电池" width="300" height="260" div align="center"></p><p>#稳压模块——3361AS车载电瓶DC5V稳压<br><img src="/2019/03/29/jiuxinlaile-yingjian/3361AS.JPG" title="3361AS稳压模块" width="40%" height="40%"></p><p>#小零件</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#主控制器——Arduino Uno&lt;br&gt;&lt;img src=&quot;/2019/03/29/jiuxinlaile-yingjian/Arduino_UNO_R3.JPG&quot; title=&quot;Arduino UNO R3板载资源布局&quot;&gt;&lt;/p&gt;
+&lt;p&gt;#GPS模块——NEO-6M和
+      
+    
+    </summary>
+    
+      <category term="救心来了 项目" scheme="http://atan.online/categories/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="救心来了 项目" scheme="http://atan.online/tags/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>复仇者联盟3的设定我觉得不合理</title>
