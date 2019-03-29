@@ -85,18 +85,18 @@
 
 
 
-<meta name="description" content="##以下为项目硬件的连线说明    Arduino GPS GSM TFT LED 按钮 备注     0      1      2     任一端 按钮按下作为中断信号，D2为中断口   3    VCC  Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号   4 TX     此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端">
+<meta name="description" content="以下为项目硬件的连线说明   Arduino GPS GSM TFT LED 按钮 备注     0      1      2     任一端 按钮按下作为中断信号，D2为中断口   3    VCC  Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号   4 TX     此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端口">
 <meta name="keywords" content="救心来了 项目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“救心来了”项目硬件系统搭建——接线具体内容">
 <meta property="og:url" content="http://atan.online/2019/03/29/jiuxinlaile-jiexian/index.html">
 <meta property="og:site_name" content="陈政任的博客">
-<meta property="og:description" content="##以下为项目硬件的连线说明    Arduino GPS GSM TFT LED 按钮 备注     0      1      2     任一端 按钮按下作为中断信号，D2为中断口   3    VCC  Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号   4 TX     此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端">
+<meta property="og:description" content="以下为项目硬件的连线说明   Arduino GPS GSM TFT LED 按钮 备注     0      1      2     任一端 按钮按下作为中断信号，D2为中断口   3    VCC  Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号   4 TX     此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端口">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-03-29T06:31:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“救心来了”项目硬件系统搭建——接线具体内容">
-<meta name="twitter:description" content="##以下为项目硬件的连线说明    Arduino GPS GSM TFT LED 按钮 备注     0      1      2     任一端 按钮按下作为中断信号，D2为中断口   3    VCC  Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号   4 TX     此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端">
+<meta name="twitter:description" content="以下为项目硬件的连线说明   Arduino GPS GSM TFT LED 按钮 备注     0      1      2     任一端 按钮按下作为中断信号，D2为中断口   3    VCC  Arduino每发送一条指令到GSM，LED闪一次，本程序会发11条指令组合成一个求救信号   4 TX     此处定义Arduino虚拟串口serial1,rx为4号端口,tx为5号端口">
 
 
 
@@ -410,8 +410,7 @@
       
 
       
-        <p>##以下为项目硬件的连线说明</p>
-<table>
+        <h2 id="以下为项目硬件的连线说明"><a href="#以下为项目硬件的连线说明" class="headerlink" title="以下为项目硬件的连线说明"></a>以下为项目硬件的连线说明</h2><table>
 <thead>
 <tr>
 <th style="text-align:center">Arduino</th>
@@ -568,22 +567,21 @@
 </tbody>
 </table>
 <p><br></p>
-<p>###Arduino</p>
-<ul>
+<h3 id="Arduino"><a href="#Arduino" class="headerlink" title="Arduino"></a>Arduino</h3><ul>
 <li>Arduino的模拟口没有使用过</li>
 <li>Arduino逻辑电路供电：5V——电源5V</li>
-<li>除了按钮和LED模块外，其它模块将不从Arduino供电，否则模块无法使用，且烧坏Arduino<br>###GPS模块</li>
+<li>除了按钮和LED模块外，其它模块将不从Arduino供电，否则模块无法使用，且烧坏Arduino<h3 id="GPS模块"><a href="#GPS模块" class="headerlink" title="GPS模块"></a>GPS模块</h3></li>
 <li>VCC接电源5V，GND接地</li>
-<li>排针最好焊好<br>###GSM模块</li>
+<li>排针最好焊好<h3 id="GSM模块"><a href="#GSM模块" class="headerlink" title="GSM模块"></a>GSM模块</h3></li>
 <li>VCC接电源5V，GND接地</li>
-<li>5VTX意思是5V时候的TX，在模块上标识为5VT。5VRX同理<br>###TFT模块</li>
-<li>###LED小模块</li>
-<li>如果没有LED小模块，用普通LED+4.7k电阻也可以<br>###按钮</li>
+<li>5VTX意思是5V时候的TX，在模块上标识为5VT。5VRX同理<h3 id="TFT模块"><a href="#TFT模块" class="headerlink" title="TFT模块"></a>TFT模块</h3></li>
+<li><h3 id="LED小模块"><a href="#LED小模块" class="headerlink" title="LED小模块"></a>LED小模块</h3></li>
+<li>如果没有LED小模块，用普通LED+4.7k电阻也可以<h3 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h3></li>
 <li>用其它种类按钮也可，点动且常开（与中断语句的设置有关）的按钮就行</li>
-<li>一端接Arduino_D2，另一端则接GND<br>###电源和稳压模块</li>
+<li>一端接Arduino_D2，另一端则接GND<h3 id="电源和稳压模块"><a href="#电源和稳压模块" class="headerlink" title="电源和稳压模块"></a>电源和稳压模块</h3></li>
 <li>电源是4*3.7V，可以提供足够功率，也需要接稳压模块。</li>
 <li>电池正反极接错会马上爆火花，不要好奇想试试<br>###其它</li>
-<li>各模块的电源接线最好做成接口，用合适的小接口，直接开关会优雅一些<br>#！！！重要</li>
+<li>各模块的电源接线最好做成接口，用合适的小接口，直接开关会优雅一些<h1 id="！！！重要"><a href="#！！！重要" class="headerlink" title="！！！重要"></a>！！！重要</h1></li>
 <li><strong>各模块共地接线</strong></li>
 </ul>
 
@@ -711,8 +709,17 @@ gitment.render('container');
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -779,6 +786,22 @@ gitment.render('container');
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#以下为项目硬件的连线说明"><span class="nav-number">1.</span> <span class="nav-text">以下为项目硬件的连线说明</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Arduino"><span class="nav-number">1.1.</span> <span class="nav-text">Arduino</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GPS模块"><span class="nav-number">1.2.</span> <span class="nav-text">GPS模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GSM模块"><span class="nav-number">1.3.</span> <span class="nav-text">GSM模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TFT模块"><span class="nav-number">1.4.</span> <span class="nav-text">TFT模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LED小模块"><span class="nav-number">1.5.</span> <span class="nav-text">LED小模块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#按钮"><span class="nav-number">1.6.</span> <span class="nav-text">按钮</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电源和稳压模块"><span class="nav-number">1.7.</span> <span class="nav-text">电源和稳压模块</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#！！！重要"><span class="nav-number"></span> <span class="nav-text">！！！重要</span></a></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
