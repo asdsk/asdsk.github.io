@@ -85,18 +85,18 @@
 
 
 
-<meta name="description" content="因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序解析，解释懂了，方便以后修改。 待续">
+<meta name="description" content="因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序的解释，解释懂了，方便以后修改。">
 <meta name="keywords" content="救心来了 项目">
 <meta property="og:type" content="article">
 <meta property="og:title" content="“救心来了”项目硬件系统搭建——部分程序内容解释">
 <meta property="og:url" content="http://atan.online/2019/03/30/jiuxinlaile-chengxu/index.html">
 <meta property="og:site_name" content="陈政任的博客">
-<meta property="og:description" content="因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序解析，解释懂了，方便以后修改。 待续">
+<meta property="og:description" content="因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序的解释，解释懂了，方便以后修改。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-03-30T15:51:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="“救心来了”项目硬件系统搭建——部分程序内容解释">
-<meta name="twitter:description" content="因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序解析，解释懂了，方便以后修改。 待续">
+<meta name="twitter:description" content="因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序的解释，解释懂了，方便以后修改。">
 
 
 
@@ -410,12 +410,48 @@
       
 
       
-        <p>因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序解析，解释懂了，方便以后修改。</p>
-<p>待续</p>
+        <p>因为是项目内容，所以程序不能完全贴上来。需要的项目组成员，可以联系我或者项目组长要。以下只是部分的难懂程序的解释，解释懂了，方便以后修改。</p>
 <a id="more"></a>
+<blockquote>
+<p>#define GPRMC_TERM “$GPRMC,”</p>
+<ul>
+<li>这个是GPS接收到卫星数据包的包头</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p> attachInterrupt( 0, onChange, FALLING );//2号口是第0个中断口</p>
+<ul>
+<li>onChange 是中断触发的函数；FALLING 是中断类型</li>
+<li>意思是 按钮按下去时，中断触发，触发onChange程序</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p>sensorVal1=String(latitude_1,7); //WGS-84(GPS)<br> sensorVal2=String(longitude_1,7);// WGS-84(GPS)</p>
+<p>/*sensorVal1=String(latitude_f,7); // GCJ-02(Google地图)<br>sensorVal2=String(longitude_f,7);//GCJ-02(Google地图)*/</p>
+<ul>
+<li>GPS数据转换到地图数据的时候，因为各种原因，是需要纠偏的，谷歌地图和百度地图的纠偏是不一样的。</li>
+<li>纠偏的数据处理，可以在这里做（后面还有很多东西要改），也可以在后台做，本项目是在后台做，需要的只是发送原始的GPS数据到后台</li>
+<li>有一些网站，可以输入数据，然后把纠偏的数据给你看。上网收藏一下那些网址吧。</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p>void SendMessage(int n)</p>
+<p>led_test();delay(n);</p>
+<ul>
+<li>SendMessage(n) 这个函数，就是控制Arduino通过软串口向GSM模块发送指令</li>
+<li>发送什么内容可在里面改，delay不要太小，不然会乱码</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<p><strong>还有各种函数嵌套的东西，然后还有接收到GPS才开始动作，或者是没有接收到也可以动作，或者发送预定的GPS数据，都是可以改的。程序只是工具，根据你的需求来做。</strong></p>
+</blockquote>
 <p><br><br><br></p>
 <blockquote>
-<p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a></p>
+<p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p>
 </blockquote>
 <p><br><br><br><br><br><br><br></p>
 
