@@ -58,7 +58,7 @@
   <entry>
     <title><![CDATA[ARS展览项目——环境搭建：opencv、dlib、VS2017]]></title>
     <url>%2F2019%2F06%2F03%2FARS-project-2-huanjingdajian%2F</url>
-    <content type="text"><![CDATA[#先说用到的软件和函数库 VS2017——我用VS2017社区版来开发，原因是软件免费而且好用，本项目用C++来做 opencv——Open Computer Vision是计算机视觉的库，有多种语言的接口，而且函数库也很丰富 dlib——Dlib是一个包含机器学习算法的C++开源工具包，提供大量的机器学习 / 图像处理算法（网上看的 &gt;:-( ）:smile: 如果有建议、补充或者质疑，请联系我。邮箱： 15zrchen1@stu.edu.cn网站留言： https://asdsk.github.io/]]></content>
+    <content type="text"><![CDATA[#先说用到的软件和函数库# VS2017——我用VS2017社区版来开发，原因是软件免费而且好用，本项目用C++来做 opencv——Open Computer Vision是计算机视觉的库，有多种语言的接口，而且函数库也很丰富 dlib——Dlib是一个包含机器学习算法的C++开源工具包，提供大量的机器学习 / 图像处理算法（网上看的 &gt;:-( ）:smile: 如果有建议、补充或者质疑，请联系我。邮箱： 15zrchen1@stu.edu.cn网站留言： https://asdsk.github.io/]]></content>
       <categories>
         <category>ARS展览项目</category>
       </categories>
