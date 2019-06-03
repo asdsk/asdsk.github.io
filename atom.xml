@@ -158,15 +158,16 @@
     <published>2019-06-03T05:18:55.000Z</published>
     <updated>2019-06-03T05:18:55.000Z</updated>
     
-    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    <content type="html"><![CDATA[<p>#先说用到的软件和函数库</p><ul><li>VS2017——我用VS2017社区版来开发，原因是软件免费而且好用，本项目用C++来做</li><li>opencv——Open Computer Vision是计算机视觉的库，有多种语言的接口，而且函数库也很丰富</li><li>dlib——Dlib是一个包含机器学习算法的C++开源工具包，提供大量的机器学习 / 图像处理算法（网上看的 &gt;:-( ）</li></ul><p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+        &lt;p&gt;#先说用到的软件和函数库&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VS2017——我用VS2017社区版来开发，原因是软件免费而且好用，本项目用C++来做&lt;/li&gt;
+&lt;li&gt;opencv——Open Computer Vision是计算机视觉的库，有多种语言的接口，而且函数库也很丰富&lt;/
       
     
     </summary>
