@@ -1,3 +1,10 @@
+http://atan.online/2019/06/03/ARS-project-7-multithreading/
+http://atan.online/2019/06/03/ARS-project-6-socketcommunication/
+http://atan.online/2019/06/03/ARS-project-5-emotiondetect/
+http://atan.online/2019/06/03/ARS-project-4-SVM/
+http://atan.online/2019/06/03/ARS-project-3-tezhengdian/
+http://atan.online/2019/06/03/ARS-project-2-huanjingdajian/
+http://atan.online/2019/06/03/ARS-project-1-qianyan/
 http://atan.online/2019/03/31/3-31liulang/
 http://atan.online/2019/03/30/jiuxinlaile-chengxu/
 http://atan.online/2019/03/29/jiuxinlaile-tiaoshi/

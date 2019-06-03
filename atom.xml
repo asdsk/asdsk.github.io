@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://atan.online/"/>
-  <updated>2019-03-31T08:08:01.000Z</updated>
+  <updated>2019-06-03T05:23:03.000Z</updated>
   <id>http://atan.online/</id>
   
   <author>
@@ -15,6 +15,195 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ARS展览项目——C++多线程：Socket+表情识别整合</title>
+    <link href="http://atan.online/2019/06/03/ARS-project-7-multithreading/"/>
+    <id>http://atan.online/2019/06/03/ARS-project-7-multithreading/</id>
+    <published>2019-06-03T05:23:03.000Z</published>
+    <updated>2019-06-03T05:23:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+      
+    
+    </summary>
+    
+      <category term="ARS展览项目" scheme="http://atan.online/categories/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="ARS展览项目" scheme="http://atan.online/tags/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ARS展览项目——Socket通信</title>
+    <link href="http://atan.online/2019/06/03/ARS-project-6-socketcommunication/"/>
+    <id>http://atan.online/2019/06/03/ARS-project-6-socketcommunication/</id>
+    <published>2019-06-03T05:21:48.000Z</published>
+    <updated>2019-06-03T05:21:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+      
+    
+    </summary>
+    
+      <category term="ARS展览项目" scheme="http://atan.online/categories/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="ARS展览项目" scheme="http://atan.online/tags/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ARS展览项目——表情识别测试</title>
+    <link href="http://atan.online/2019/06/03/ARS-project-5-emotiondetect/"/>
+    <id>http://atan.online/2019/06/03/ARS-project-5-emotiondetect/</id>
+    <published>2019-06-03T05:20:05.000Z</published>
+    <updated>2019-06-03T05:20:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+      
+    
+    </summary>
+    
+      <category term="ARS展览项目" scheme="http://atan.online/categories/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="ARS展览项目" scheme="http://atan.online/tags/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ARS展览项目——SVM分类器</title>
+    <link href="http://atan.online/2019/06/03/ARS-project-4-SVM/"/>
+    <id>http://atan.online/2019/06/03/ARS-project-4-SVM/</id>
+    <published>2019-06-03T05:19:41.000Z</published>
+    <updated>2019-06-03T05:19:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+      
+    
+    </summary>
+    
+      <category term="ARS展览项目" scheme="http://atan.online/categories/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="ARS展览项目" scheme="http://atan.online/tags/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ARS展览项目——识别面部得到特征点</title>
+    <link href="http://atan.online/2019/06/03/ARS-project-3-tezhengdian/"/>
+    <id>http://atan.online/2019/06/03/ARS-project-3-tezhengdian/</id>
+    <published>2019-06-03T05:19:23.000Z</published>
+    <updated>2019-06-03T05:19:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+      
+    
+    </summary>
+    
+      <category term="ARS展览项目" scheme="http://atan.online/categories/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="ARS展览项目" scheme="http://atan.online/tags/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ARS展览项目——环境搭建：opencv、dlib、VS2017</title>
+    <link href="http://atan.online/2019/06/03/ARS-project-2-huanjingdajian/"/>
+    <id>http://atan.online/2019/06/03/ARS-project-2-huanjingdajian/</id>
+    <published>2019-06-03T05:18:55.000Z</published>
+    <updated>2019-06-03T05:18:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+      
+    
+    </summary>
+    
+      <category term="ARS展览项目" scheme="http://atan.online/categories/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="ARS展览项目" scheme="http://atan.online/tags/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ARS展览项目——前言</title>
+    <link href="http://atan.online/2019/06/03/ARS-project-1-qianyan/"/>
+    <id>http://atan.online/2019/06/03/ARS-project-1-qianyan/</id>
+    <published>2019-06-03T05:18:04.000Z</published>
+    <updated>2019-06-03T05:18:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><br><br><br></p><blockquote><p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p></blockquote><p><br><br><br><br><br><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果有建议、补充或者质疑，请联系我。&lt;br&gt;邮箱： &lt;a href=&quot;mailto:15zrchen1@stu.edu.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15zrchen1
+      
+    
+    </summary>
+    
+      <category term="ARS展览项目" scheme="http://atan.online/categories/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="ARS展览项目" scheme="http://atan.online/tags/ARS%E5%B1%95%E8%A7%88%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>流浪</title>
@@ -229,7 +418,7 @@ th:nth-of-type(7) {width: 100px;}
     <published>2019-03-12T11:34:33.000Z</published>
     <updated>2019-03-23T16:00:00.000Z</updated>
     
-    <content type="html"><![CDATA[<ol><li>今夜扁舟来决汝，死生从此各西东。——《别鄞女》王安石</li><li>当我避开你的柔情后，泪开始滑落。</li><li>不要温顺地走进那良夜。——英国诗人狄兰·托马斯</li></ol>]]></content>
+    <content type="html"><![CDATA[<ol><li>今夜扁舟来决汝，死生从此各西东。——《别鄞女》王安石</li><li>当我避开你的柔情后，泪开始滑落。</li><li>不要温顺地走进那良夜。——英国诗人狄兰·托马斯</li><li>岁月长，衣裳薄。——林夕，《再见二丁目》</li><li>如果不能为人包扎绷带，就别触碰别人的伤口。——《冰点》三浦绫子</li><li>爱不是感情，而是意志。——《冰点2》三浦绫子</li><li>每个人都有自己幸福的尺度。——詹青云</li><li>一夜北风紧,开门雪尚飘。——《红楼梦》<ul><li>end</li></ul></li></ol>]]></content>
     
     <summary type="html">
     
@@ -239,8 +428,8 @@ th:nth-of-type(7) {width: 100px;}
 &lt;li&gt;今夜扁舟来决汝，死生从此各西东。——《别鄞女》王安石&lt;/li&gt;
 &lt;li&gt;当我避开你的柔情后，泪开始滑落。&lt;/li&gt;
 &lt;li&gt;不要温顺地走进那良夜。——英国诗人狄兰·托马斯&lt;/li&gt;
-&lt;/ol&gt;
-
+&lt;li&gt;岁月长，衣裳薄。——林夕，《再见二丁目》&lt;/li&gt;
+&lt;li&gt;如果不能为人
       
     
     </summary>
@@ -255,9 +444,9 @@ th:nth-of-type(7) {width: 100px;}
     <link href="http://atan.online/2019/03/05/lingang/"/>
     <id>http://atan.online/2019/03/05/lingang/</id>
     <published>2019-03-05T03:26:46.000Z</published>
-    <updated>2019-03-30T16:21:20.197Z</updated>
+    <updated>2019-04-07T15:15:59.412Z</updated>
     
-    <content type="html"><![CDATA[<ol><li>不舍得，不过就是你劝我早点归去，我说我不想归去而已。</li><li>信任是一种归纳推理。</li></ol>]]></content>
+    <content type="html"><![CDATA[<ol><li>不舍得，不过就是你劝我早点归去，我说我不想归去而已。</li><li>信任是一种归纳推理。</li><li>越是模糊的事物，越不容易被质疑</li></ol>]]></content>
     
     <summary type="html">
     
@@ -266,6 +455,7 @@ th:nth-of-type(7) {width: 100px;}
         &lt;ol&gt;
 &lt;li&gt;不舍得，不过就是你劝我早点归去，我说我不想归去而已。&lt;/li&gt;
 &lt;li&gt;信任是一种归纳推理。&lt;/li&gt;
+&lt;li&gt;越是模糊的事物，越不容易被质疑&lt;/li&gt;
 &lt;/ol&gt;
 
       
