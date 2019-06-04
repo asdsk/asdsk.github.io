@@ -1133,8 +1133,22 @@
             <h1 id="先说用到的软件和函数库"><a href="#先说用到的软件和函数库" class="headerlink" title="先说用到的软件和函数库"></a>先说用到的软件和函数库</h1><ul>
 <li>VS2017——我用VS2017社区版来开发，原因是软件免费而且好用，本项目用C++来做</li>
 <li>opencv——Open Computer Vision是计算机视觉的库，有多种语言的接口，而且函数库也很丰富</li>
-<li>dlib——Dlib是一个包含机器学习算法的C++开源工具包，提供大量的机器学习 / 图像处理算法（网上看的 &gt;:-( ）<br>:smile:</li>
+<li>dlib——Dlib是一个包含机器学习算法的C++开源工具包，提供大量的机器学习 / 图像处理算法（网上看的 :-） ）</li>
 </ul>
+<p>本项目用的是VS2017社区版+opencv3.4.2版本+dlib9.0.3 。用其它版本也可以，新一点的版本吧。</p>
+<h1 id="容易遇到的问题"><a href="#容易遇到的问题" class="headerlink" title="容易遇到的问题"></a>容易遇到的问题</h1><ol>
+<li>dlib 配置的时候是需要release|x64 的模式,因为debug模式会让程序运行得非常缓慢，这在dlib官网上有说明 <a href="http://dlib.net/faq.html#Whyisdlibslow" title="http://dlib.net/faq.html#Whyisdlibslow" target="_blank" rel="noopener">http://dlib.net/faq.html#Whyisdlibslow</a></li>
+</ol>
+<h1 id="opencv-在-VS2017-里面的配置"><a href="#opencv-在-VS2017-里面的配置" class="headerlink" title="opencv 在 VS2017 里面的配置"></a>opencv 在 VS2017 里面的配置</h1><p>关于opencv的配置，这个文档已经非常清楚了，<a href="https://blog.csdn.net/qq_41175905/article/details/80560429" title="https://blog.csdn.net/qq_41175905/article/details/80560429" target="_blank" rel="noopener">https://blog.csdn.net/qq_41175905/article/details/80560429</a>，非常感谢这位作者的帮助。如果看不懂，多找几篇关于配置的来看，方法都一样，只是详细与否的区别。<br><br>总结是：<br></p>
+<ol>
+<li>比如把opencv安装在了D:\opencv342\ ，安装好后<br></li>
+<li>右键“我的电脑”-&gt;属性-&gt;高级系统设置-&gt;环境变量，在后面添加环境变量： D:\opencv342\opencv\build\x64\vc15\bin <br></li>
+<li>配置好环境变量后，打开VS2017，新建一个C++空项目<br></li>
+<li>打开属性管理器，菜单栏-&gt;视图-&gt;其他窗口-&gt;属性管理器，对release|X64进行配置：右键release|X64-&gt;新建一个属性表，重命名为opencv<br></li>
+<li>双击opencv属性表，属性中的 VC++目录-&gt;包含目录 <br>D:\opencv342\opencv\build\include<br>D:\opencv342\opencv\build\include\opencv<br>D:\opencv342\opencv\build\include\opencv2<br></li>
+<li>VC++目录-&gt;库目录<br>D:\opencv342\opencv\build\x64\vc15\lib</li>
+<li>链接器-&gt;输入-&gt;附加依赖项中加入<br>opencv_world341d.lib<h1 id="dlib-在-VS2017-里面的配置"><a href="#dlib-在-VS2017-里面的配置" class="headerlink" title="dlib 在 VS2017 里面的配置"></a>dlib 在 VS2017 里面的配置</h1><a href="https://www.cnblogs.com/dapeng-bupt/p/7807679.html" target="_blank" rel="noopener">https://www.cnblogs.com/dapeng-bupt/p/7807679.html</a></li>
+</ol>
 <p><br><br><br></p>
 <blockquote>
 <p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p>
