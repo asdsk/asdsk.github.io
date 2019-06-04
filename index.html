@@ -1149,8 +1149,55 @@
 <li>VC++目录-&gt;库目录<br>D:\opencv342\opencv\build\x64\vc15\lib</li>
 <li>链接器-&gt;输入-&gt;附加依赖项中加入<br>opencv_world341d.lib</li>
 <li>到这里，opencv就配置好了，第2步时配置环境变量的重点，第5、6、7步是配置vs的重点，第8步可有可无，只是为了未来方便。就是打开第3步的项目文件夹，把刚刚配置好的那个新建的opencv属性表保存在另外一个容易保存的地方就好，到时候要用就把它导入进来，就不用重新配置了。<br><br>测试一下：</li>
-<li><h1 id="dlib-在-VS2017-里面的配置"><a href="#dlib-在-VS2017-里面的配置" class="headerlink" title="dlib 在 VS2017 里面的配置"></a>dlib 在 VS2017 里面的配置</h1><a href="https://www.cnblogs.com/dapeng-bupt/p/7807679.html" target="_blank" rel="noopener">https://www.cnblogs.com/dapeng-bupt/p/7807679.html</a></li>
+<li>新建一个C++空项目</li>
+<li>打开属性管理表，右键release|X64，添加-&gt;现有项，然后把刚刚的opencv属性表导入进去</li>
+<li>然后转到解决方案的管理器，右键源文件-&gt;添加新建项，然后添加一个cpp文件，比如是1.cpp</li>
+<li>然后把下面的代码粘贴进去</li>
 </ol>
+<pre class="class=" prettyprit lang-c#">
+#include "opencv2/core.hpp"
+#include "opencv2/imgproc.hpp"
+#include "opencv2/highgui.hpp"
+#include "opencv2/videoio.hpp"
+#include <iostream>
+
+using namespace cv;
+using namespace std;
+
+int main()
+{
+    cout << "Built with OpenCV " << CV_VERSION << endl;
+
+    VideoCapture capture(0);    // 打开摄像头
+    if(!capture.isOpened())    // 判断是否打开成功
+    {
+        cout << "open camera failed. " << endl;
+        return -1;
+    }
+
+    while(true)
+    {
+        Mat frame;
+        capture >> frame;    // 读取图像帧至frame
+        if(!frame.empty())    // 判断是否为空
+        {
+            imshow("camera", frame);
+        }
+
+        if(waitKey(30) > 0)        // delay 30 ms等待按键
+        {
+            break;
+        }
+    }
+
+    return 0;
+}
+</iostream></pre>
+
+<ol start="5">
+<li>这个代码的意思是打开笔记本电脑自带的摄像头，要是没有摄像头的话要借一个usb摄像头，然后把代码里的 VideoCapture capture(0);  改成 VideoCapture capture(1); ，</li>
+</ol>
+<h1 id="dlib-在-VS2017-里面的配置"><a href="#dlib-在-VS2017-里面的配置" class="headerlink" title="dlib 在 VS2017 里面的配置"></a>dlib 在 VS2017 里面的配置</h1><p><a href="https://www.cnblogs.com/dapeng-bupt/p/7807679.html" target="_blank" rel="noopener">https://www.cnblogs.com/dapeng-bupt/p/7807679.html</a></p>
 <p><br><br><br></p>
 <blockquote>
 <p>如果有建议、补充或者质疑，请联系我。<br>邮箱： <a href="mailto:15zrchen1@stu.edu.cn" target="_blank" rel="noopener">15zrchen1@stu.edu.cn</a><br>网站留言： <a href="https://asdsk.github.io/" target="_blank" rel="noopener">https://asdsk.github.io/</a></p>
