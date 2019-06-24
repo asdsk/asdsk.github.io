@@ -1,3 +1,4 @@
+http://atan.online/2019/06/24/daily-story/
 http://atan.online/2019/06/03/ARS-project-7-multithreading/
 http://atan.online/2019/06/03/ARS-project-6-socketcommunication/
 http://atan.online/2019/06/03/ARS-project-5-emotiondetect/
