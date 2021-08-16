@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://atan2021.gitee.io/about/index.html</loc>
+    <loc>https://gitee.com/atan2021/atan2021/about/index.html</loc>
     
     <lastmod>2021-08-15</lastmod>
     
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/2021/08/15/abc/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/2021/08/15/abc/</loc>
     
     <lastmod>2021-08-15</lastmod>
     
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/2021/08/15/asdf123/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/2021/08/15/asdf123/</loc>
     
     <lastmod>2021-08-15</lastmod>
     
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/categories/index.html</loc>
+    <loc>https://gitee.com/atan2021/atan2021/categories/index.html</loc>
     
     <lastmod>2021-08-15</lastmod>
     
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/tags/index.html</loc>
+    <loc>https://gitee.com/atan2021/atan2021/tags/index.html</loc>
     
     <lastmod>2021-08-15</lastmod>
     
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/2021/08/15/hello-world/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/2021/08/15/hello-world/</loc>
     
     <lastmod>2021-08-14</lastmod>
     
@@ -45,7 +45,7 @@
   
 
   <url>
-    <loc>https://atan2021.gitee.io/</loc>
+    <loc>https://gitee.com/atan2021/atan2021</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -53,21 +53,21 @@
 
   
   <url>
-    <loc>https://atan2021.gitee.io/tags/123/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/tags/123/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/tags/heeeeeeeeee/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/tags/heeeeeeeeee/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/tags/456/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/tags/456/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -76,21 +76,21 @@
 
   
   <url>
-    <loc>https://atan2021.gitee.io/categories/qwe/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/categories/qwe/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/categories/qwe/asdfajfdklsfj/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/categories/qwe/asdfajfdklsfj/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/categories/qwe/asdfajfdklsfj/sss/</loc>
+    <loc>https://gitee.com/atan2021/atan2021/categories/qwe/asdfajfdklsfj/sss/</loc>
     <lastmod>2021-08-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
