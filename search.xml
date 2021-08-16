@@ -5,13 +5,29 @@
     <url>/atan2021.gitee.io/2021/08/15/abc/</url>
     <content><![CDATA[<p>陈政任测试</p>
 <p>123</p>
+<p>测试标签和目录</p>
+<hr>
 ]]></content>
+      <categories>
+        <category>qwe</category>
+        <category>asdfajfdklsfj</category>
+        <category>sss</category>
+      </categories>
+      <tags>
+        <tag>123</tag>
+        <tag>heeeeeeeeee</tag>
+        <tag>456</tag>
+      </tags>
   </entry>
   <entry>
     <title>asdf123</title>
     <url>/atan2021.gitee.io/2021/08/15/asdf123/</url>
     <content><![CDATA[<p>陈政任测试22222</p>
 ]]></content>
+      <tags>
+        <tag>heeeeeeeeee</tag>
+        <tag>456</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
