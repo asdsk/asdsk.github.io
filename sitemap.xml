@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://atan2021.gitee.io/2021/08/27/%E6%97%A5%E8%AE%B0/</loc>
+    
+    <lastmod>2021-08-27</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://atan2021.gitee.io/2021/08/16/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95%E8%AE%B0%E5%BD%95/</loc>
+    
+    <lastmod>2021-08-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://atan2021.gitee.io/tags/index.html</loc>
     
     <lastmod>2021-08-26</lastmod>
@@ -22,48 +36,6 @@
     
   </url>
   
-  <url>
-    <loc>https://atan2021.gitee.io/2021/08/16/asdfghjkl/</loc>
-    
-    <lastmod>2021-08-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atan2021.gitee.io/2021/08/15/hello-world/</loc>
-    
-    <lastmod>2021-08-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atan2021.gitee.io/2021/08/17/20210817test/</loc>
-    
-    <lastmod>2021-08-17</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atan2021.gitee.io/2021/08/16/%E9%99%88%E4%B8%AA%E4%BA%BA/</loc>
-    
-    <lastmod>2021-08-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atan2021.gitee.io/2021/08/15/abc/</loc>
-    
-    <lastmod>2021-08-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://atan2021.gitee.io/2021/08/15/asdf123/</loc>
-    
-    <lastmod>2021-08-15</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://atan2021.gitee.io/</loc>
@@ -74,21 +46,14 @@
 
   
   <url>
-    <loc>https://atan2021.gitee.io/tags/123/</loc>
+    <loc>https://atan2021.gitee.io/tags/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2021-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/tags/heeeeeeeeee/</loc>
-    <lastmod>2021-08-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://atan2021.gitee.io/tags/456/</loc>
+    <loc>https://atan2021.gitee.io/tags/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2021-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -97,21 +62,14 @@
 
   
   <url>
-    <loc>https://atan2021.gitee.io/categories/qwe/</loc>
+    <loc>https://atan2021.gitee.io/categories/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2021-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://atan2021.gitee.io/categories/qwe/asdfajfdklsfj/</loc>
-    <lastmod>2021-08-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://atan2021.gitee.io/categories/qwe/asdfajfdklsfj/sss/</loc>
+    <loc>https://atan2021.gitee.io/categories/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2021-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
