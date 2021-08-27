@@ -9,7 +9,8 @@
 x_{11} & x_{12} & \ldots \\
 x_{21} & x_{22} & \ldots \\
 \vdots & \vdots & \ddots x
-\end{array} \right)</script><p>$RMSE = 1 - \dfrac{\sum_{i=1}^n (y_i - \hat{y}_i)^2} {\sum_{i=1}^n (y_i - \bar{y})^2}$</p>
+\end{array} \right)</script><span id="more"></span>
+<p>$RMSE = 1 - \dfrac{\sum_{i=1}^n (y_i - \hat{y}_i)^2} {\sum_{i=1}^n (y_i - \bar{y})^2}$</p>
 <script type="math/tex; mode=display">\begin{equation}
 \begin{aligned}
 a &= b + c \\
@@ -65,7 +66,7 @@ a &= b + c \\
 <p>cond1=&gt;condition: ids_remain空?<br>cond2=&gt;condition: proxy_list空?<br>cond3=&gt;condition: ids_got空?<br>cond4=&gt;condition: 爬取成功??<br>cond5=&gt;condition: ids_remain空?</p>
 <p>io1=&gt;inputoutput: ids-remain<br>io2=&gt;inputoutput: proxy_list<br>io3=&gt;inputoutput: ids-got</p>
 <p>st-&gt;op1(right)-&gt;io1-&gt;cond1<br>cond1(yes)-&gt;sub1-&gt;io2-&gt;cond2<br>cond2(no)-&gt;op3<br>cond2(yes)-&gt;sub1<br>cond1(no)-&gt;op3-&gt;cond4<br>cond4(yes)-&gt;io3-&gt;cond3<br>cond4(no)-&gt;io1<br>cond3(no)-&gt;op4<br>cond3(yes, right)-&gt;cond5<br>cond5(yes)-&gt;op5<br>cond5(no)-&gt;cond3<br>op5-&gt;e</p>
-<span id="more"></span>]]></content>
+<!--more-->]]></content>
       <categories>
         <category>Markdown语法测试</category>
       </categories>
