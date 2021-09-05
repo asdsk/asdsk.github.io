@@ -27,20 +27,32 @@
     var CONFIG = {"hostname":"atan2021.gitee.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+  <meta name="description" content="主控制器——Arduino Uno一开始之所以用Arduino做主控板，是因为比较简单（逃(￣▽￣)~），但是既然做了，就继续用下去吧，毕竟也是可以用的。后来者想用mega板也可以（程序是一样的，不要接错线就行了），但是uno已经可以完成目前所有功能。  以后如果想优化，建议把主控板换成stm32，因为目前arduino对这个项目来说反应并不够快。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="日记">
-<meta property="og:url" content="https://atan2021.gitee.io/2021/%E6%97%A5%E8%AE%B0/index.html">
+<meta property="og:title" content="“救心来了”项目硬件系统搭建（一）——硬件选型">
+<meta property="og:url" content="https://atan2021.gitee.io/2021/%E2%80%9C%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86%E2%80%9D%E9%A1%B9%E7%9B%AE%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E7%A1%AC%E4%BB%B6%E9%80%89%E5%9E%8B/index.html">
 <meta property="og:site_name" content="博客">
-<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:description" content="主控制器——Arduino Uno一开始之所以用Arduino做主控板，是因为比较简单（逃(￣▽￣)~），但是既然做了，就继续用下去吧，毕竟也是可以用的。后来者想用mega板也可以（程序是一样的，不要接错线就行了），但是uno已经可以完成目前所有功能。  以后如果想优化，建议把主控板换成stm32，因为目前arduino对这个项目来说反应并不够快。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-08-27T15:13:36.000Z">
-<meta property="article:modified_time" content="2021-09-05T10:10:07.170Z">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_Arduino_UNO_R3.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_GPS.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_GPStianxian.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_SIM900A.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_tft1.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_tft2.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_dianchi2.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_dianchihe2.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_3361AS.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_LED.jpg">
+<meta property="og:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_anniu.jpg">
+<meta property="article:published_time" content="2021-09-04T16:27:27.000Z">
+<meta property="article:modified_time" content="2021-09-05T10:13:57.080Z">
 <meta property="article:author" content="陈政任">
-<meta property="article:tag" content="日记">
+<meta property="article:tag" content="救心来了 项目">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/atan2021/pic/raw/master/20210905_Arduino_UNO_R3.jpg">
 
-<link rel="canonical" href="https://atan2021.gitee.io/2021/%E6%97%A5%E8%AE%B0/">
+<link rel="canonical" href="https://atan2021.gitee.io/2021/%E2%80%9C%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86%E2%80%9D%E9%A1%B9%E7%9B%AE%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E7%A1%AC%E4%BB%B6%E9%80%89%E5%9E%8B/">
 
 
 <script id="page-configurations">
@@ -53,7 +65,7 @@
   };
 </script>
 
-  <title>日记 | 博客</title>
+  <title>“救心来了”项目硬件系统搭建（一）——硬件选型 | 博客</title>
   
 
 
@@ -202,7 +214,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://atan2021.gitee.io/2021/%E6%97%A5%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="https://atan2021.gitee.io/2021/%E2%80%9C%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86%E2%80%9D%E9%A1%B9%E7%9B%AE%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E7%A1%AC%E4%BB%B6%E9%80%89%E5%9E%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -215,7 +227,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          日记
+          “救心来了”项目硬件系统搭建（一）——硬件选型
         </h1>
 
         <div class="post-meta">
@@ -224,23 +236,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-08-27 23:13:36" itemprop="dateCreated datePublished" datetime="2021-08-27T23:13:36+08:00">2021-08-27</time>
+              <time title="创建时间：2021-09-05 00:27:27 / 修改时间：18:13:57" itemprop="dateCreated datePublished" datetime="2021-09-05T00:27:27+08:00">2021-09-05</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-09-05 18:10:07" itemprop="dateModified" datetime="2021-09-05T18:10:07+08:00">2021-09-05</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">日记</span></a>
+                  <a href="/categories/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/" itemprop="url" rel="index"><span itemprop="name">救心来了 项目</span></a>
                 </span>
             </span>
 
@@ -255,18 +261,79 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="527f31a59fd6bd0c1d6915c2a3a6cf270cf68c510390ed6711ff6273c0984f0f">27b300880235c175b3d490949558149e5b74b07a380f33232e501080bb3f1b784844a000ac6aec3c2ccdfc3ccac0aeef3abb707bdddfbea979a0bbded5044d88e2612c83d8c1ed9df3a432605eb6763b261205acd73398e31757016f0f7356aa1b704ae881fb954b583f5c255ce8d0e26d7dfd35453b2d15feada517ef5821ae83b563e239d1f951b2835fa206217ded08fa991af50a7ddadfbe37efa0f4bd749b30402dd25fe9faf70d6a2c74cabca35c9543f0763b1b1dca7ef0b1d8d20b0db2fde5391859de24443646d7338685f8a3c437f3935ab13f01a8d601658c5e11afb2bbff441da5fb58cca835ae13ba686eecbbcdff16e927dd3d88b2085c21e235d8e3b63ec050b1baa90d958eb33c206050019a3b5c38227c0c747c6b380275547e04072bb146a3ae27908aa7b8ea6f887f2b41c87049f7c2201f1c292a3bc8ac434fd9f83f8c8d06a6e66be02b3f2a4605761cd696de1a6005696a9c1a6c881ab9ff58c24bc70525e5291dedd32cc3c2d89c488dd2c8a3b637983c7e1947be5b0f149d7b83af04b20247b8a35aa1abbd0a1dcc449bf473c4bd75ccc5c3265e80f89e132a4c60d6fd53e95727ebf8d5883c037cd9e41ff454fb293a4bfda26d39b84ca97590a8262f2324a2b837d7e197fe20a4cf554a7ac1bf8e57a8511eeecc56fffe1034599b0975ee8f8fd661ec20f4b61c61fe53b775b16ea74d7c810109d98e6bbe3f6d625077cca4db0d580330f13bee7125ca9655211249efeee84bc3f072ffcc26d7eeec072a12b005801cc882b3288ad6f1fa485b280dbc89a9a3746c904761b39bbc6a56de9b304b3d5da932752678c8a47c60df460d9d42cea6ab99202c1610eb7455f529fac202470d69e6a845b039521912f65eb3dfff7e5ad59f04cc755ef944d77964b70ff3a21fae2532fc80eee4f6f2805fcb53f7f3e86816355e5629fc6dc4ec482b4bcb1715581546903f9e68a5941905f148fff024942d7e83aacb229294e171e9eaa68eca1f9168a4cd53d5735cd75293ff2bfe8fd9aa46a67f794c27b124e9025965dd3a5dfac51c580abd9f9f51d988a7e6df5ce3380ac9690aa9c565f32da8f18ab018f9062fb4fd8191aecbbe3d7c25fbc506215e59d6aa94861aab435d7c2e3eec73012bf6bea7dbc418b5b3193c7d2c47888dc68275f579f5f3fb9ff49767e3cefcba0d773d392a31d676b968c3ef8502d2a3fffc8d28ecfa7c62cf01d9593324d6588a49ce7b469e174d185e394b618c3910cc12efbbbe0db1e35a8c2c174a869ef2cae73ab13e6fe8af9f9dd9d5d8f0337d2a806fff34d097439448a2f132911fbe4c65bafff1d24333caeef3d79167494fe4fa677cfa123760e555ef80c268ecc016c51fedb63af7f411d3968d50f456da8b84db95ffc65d49e922d1a1cc665b5b1648befcc15b53c1e924781c9950619f779c2d7cbb68a9000aa43ef330018ecaa7ec585dd28760b2a6565c729c8fd7a267bf7b7ef01673deb3ff7e94e428f6f88f190edf297a5812e3c8a86e25824058791997366776b26a1891a76063714151daa28e93b7195294a51d2733f37e685a4e2646244cf3cfe03b719fe9f2d16ec98e934e6222917d1d384b3e66038d5accbe8966efbbd7b9757d47f828806c4f237e7fa274688f2ffe2e638ce18e5c2b2802c71e985d97b6fbce815ce003c49fba92984106b400446a440dabce5c930cc68af15790f884b282b35109f1cd1c6d5212353ae1a6b7d0a4c77d7109733a7b3181d5df080d76c7029a97ecb2bdb6e3bee237f9ee1e327a4309f69723b22d79d076de86dbe66ef57f6cf50aae85f6c018a8efb1f4689a2eeec0aae5319b4415871492f89cf4cb42654002060ae07cce494eb6fd559cc02437315186b9b9f9c1f262fd75693b49e4865f92e742bd731638a83ede7d1c1c72800309cfb5faf429d2a2672f9e2340a3c2026e4a437f48af21dcdcecfccdb133decb084674c1e2b92b528288c5e293f318333964888cd8a66beb7063caebda5ae3619ad074cda08ca8b01470e7b089040175459d6c0da8f855fd16978bd059fc92c4714974f7cc0643e5284b5d81a0955ebd87c1a9b5b79b9be4158beefefc7c0dae5d0ce2b29f42057a69196b15b00a06ee08a053aa46c2593dda4fda0273f4419f7df4e57bece2604d9b9da9e50b2eea76bc771b02068beee7fae38a30846059ee186e8fb4e7b1fb95b3f544385603b3339b32ab3f607bae4291a0f817e651a9aa840bfa9fdee42f9ee4ebe35dfe7e3d700ac8e9baaf60af23978e6c918906ea8d91d9453856cf6d71021acb7908ea96fe7fcb4d5bdeb7bd4998a3100ad92882f151dbea29a7b5d20e3e3ec2299fea04d9ab47c2fda1adeaca0da81f83d35bacf13f0805817552a73382dbd01009f46022e3933ee4e19da1f687ff2179b9bb53e234035d2f4c6a5ec3075b2e8a047bbd17a7319c0e2ff95135defc897de1748c150bf723d2665dfbdfab7d448f74929f116c951030ea9894ce751294e024bdb3e3b9231f8e4a5578781e96ba7c21aa8da763e53e849d09bbde52ddf624e23cf52f7442cb06b43f7db917f46e3ea02736407e027ca20859cfc6e404ee972de3416a7487b2c62e8a56e6354fe005db6a705f3161955ff9255dd75b2111ea223637085362596917e11786aecc73ba601013b8a4f65bad5fbed988566155ff2a788ec877e941789bf52008d7418404ac72e68e5a47768f29fd5bbb3ec00372f77b2c410fd0173398c429e98fbdfb473b72469b7207963ff9e737957db0dfa530a00af48a169d13c675234425702a64f7dcdb94e87935af0651e3db8f0150c945c621ed36e27df11e3186374019b7685d40b0c91877429ff49d80c7075e3ca729d6920517185ff612fc2f9d3532205a48a3fb9b9348a756423c0aa16e1a8934d89d912476a946fd2d041b62e7020040140df752a17d7a70445caa7b970054cadfbc900cdba6ff6fe56a78920e6ab5362cb5435799d66bc9301d119339109466d82408f7eb5896e01c508e306956d5db66ef0a7c1f9f72f70f2f9e055fc889d878b74faf12ed25202b007d3956455275b63fa048d8c429c40d43a25cb9b2c74d51e604627757ac178799592c06c34372dd4d96f26657159300c96f4d29f33fd388e0814757b3af530fc483c9df7f9a0eb832c2a79bb4bc4ccfb9e7efff395c717218252fc158feaa8f05a8f24ed3d91936af68a49e695db115f162a7632493a491ec07121c52904eab28f2d637f66c7e447575822beecbfffda00102d81da1edee904f039e78e3385cf3f04502c830a171b90e135302e7c893d5a053b787bb1ab38fa023dcfa218b04570e450044d89c0f310c1569963ac4b4aedd32c7d3d3e957da71f3f4c82c5e928d6c8c6448464dc393f755103967a7f071442f12618b441a8ecdb2a134e705de992569981351d0c2d8681614c6d2892bdf23f227e4dc3adccee6aae8c7806f82f9adb9148d037681fe2921b97a8e42e03e1549440c8d53b6c69a93a3ac7cf7de4c4e85fa2ea4d62626bca546ad2ea6383bd44e1318384d20eaa14759bf2a431825da6a428485cfedf407f8dc0d60486ec3f0418ac9df9cead9a2feef65ce7ac61fd4d7ff40feecb0cbad9c3796fdf0521737594efcb0a89c8e88a814218827b9fa78883c6bd3aba27027182f8c788297ec97a57f6d49065cbeda95098e8d6af48dfba89462e53399f5309ea6b7308ab1a9a2c1934f41e709bbdb378c432071efd6a812e0847de131f6bc952c8187283cf5043ab19e0eecdae49b04ee57ea2a4722b62befe72296a7735ac88dab379caabdc69b4465b721828ca6a80381d8f785f7e87cfae0fcceb74c5b854765b630bda007be386184d2e96bcaf3838a5042043071404c581ebde73d352c89012935eeab5bc2983d2d8fdd3a2616c113d596de36ee024398fd1fde83630f891f6c2bedc7c63415803137d21203c62e0d2b6ddfbe278696642ea549f64e6f711874a08240cfd3eb4067bcf6e0bbb02006199f564f5e2b0e176283add0bf5410935064835c449185bbb9c4dbb3b2ea99a55ade89d8984195e6570aa92b80ad564f56fa801a48cbc9bfde5e0ea90baae40964ec2e08d10be94cb40be64d2642ae6688a1822854bbcaca08f16d1ac58e2dca87732821ce1cfcfa25e43f67b568b1ad6e6849e71778be88be820e83b8670d80a7434600137442a5e76f11fa9d45cbd8ed1485a7cbd28e5cd133466656e7aea563d11d6c011578f5cb72b78afa2e4211650cd2b463f1ee176bf270589cf422db975b778d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+        <h1 id="主控制器——Arduino-Uno"><a href="#主控制器——Arduino-Uno" class="headerlink" title="主控制器——Arduino Uno"></a>主控制器——Arduino Uno</h1><p>一开始之所以用Arduino做主控板，是因为比较简单（逃(￣▽￣)~），但是既然做了，就继续用下去吧，毕竟也是可以用的。后来者想用mega板也可以（程序是一样的，不要接错线就行了），但是uno已经可以完成目前所有功能。</p>
+<ul>
+<li>以后如果想优化，建议把主控板换成stm32，因为目前arduino对这个项目来说反应并不够快。</li>
+</ul>
+<span id="more"></span>
+<div align=center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_Arduino_UNO_R3.jpg" alt='Arduino UNO R3板载资源布局' width="500"/></div>
+
+<h1 id="GPS模块——NEO-6M和加长天线"><a href="#GPS模块——NEO-6M和加长天线" class="headerlink" title="GPS模块——NEO-6M和加长天线"></a>GPS模块——NEO-6M和加长天线</h1><ul>
+<li>GPS模块关心RX和TX就行了，VCC接电源5V，GND接地，用其它品牌的GPS也可以，接好这四个接口，有些GPS有时序接口什么的，这里没有用到。</li>
+<li>GPS要在室外用，所以要接天线，如果本来就在室外的话，不接也可以。</li>
+</ul>
+<style>
+table {margin-left: auto; margin-right: auto}
+</style>
+
+<table>
+    <tr>
+        <td ><center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_GPS.jpg" alt='GPS模块' height="200"></center></td>
+        <td ><center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_GPStianxian.jpg"  alt='GPS天线' height="200"></center></td>
+    </tr>
+</table>
+
+<h1 id="GSM模块——SIM900A"><a href="#GSM模块——SIM900A" class="headerlink" title="GSM模块——SIM900A"></a>GSM模块——SIM900A</h1><p>GSM模块有很多坑，在调试文档里详细说。本项目最好只用这个品牌GSM。</p>
+<ul>
+<li>GSM模块要搭建SIM卡使用，这种模块适用 移动4G 的SIM卡，大卡槽。然后用一张物联卡来调试就可以，当然，平常用的移动SIM卡也可以，卡里面要有流量。</li>
+<li>本项目里GSM模块主要用于接收Arduino的指令，然后通过连接互联网，把指令发送到后台。</li>
+<li>而对后台的数据处理，与微信连接的内容有疑问，请与<strong>汕头大学欧少闽老师</strong>联系。因为能力有限，本人只熟悉硬件的搭建和调试。</li>
+</ul>
+<div align=center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_SIM900A.jpg" alt='SIM900A' width="400"/></div>
+
+<h1 id="显示屏模块——1-77寸TFT显示屏"><a href="#显示屏模块——1-77寸TFT显示屏" class="headerlink" title="显示屏模块——1.77寸TFT显示屏"></a>显示屏模块——1.77寸TFT显示屏</h1><p>TFT显示屏主要用来GPS地址的显示，是没有什么用的（悄悄说）。调试什么的可以从电脑看。但是要专业一些，所以还是有一个显示屏吧。</p>
+<ul>
+<li>以后可以多加几个按钮，用来切换显示病人的状态，要是可触屏显示屏，用处就更大了，但是这时候不能用Arduino来控制。</li>
+<li>接线前先焊好排线吧，本项目只用到tft模块的0-8接口。</li>
+</ul>
+<table>
+    <tr>
+        <td ><center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_tft1.jpg" alt='TFT显示屏正面' width="200"></center></td>
+        <td ><center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_tft2.jpg"  alt='TFT显示屏反面' width="200"></center></td>
+    </tr>
+</table>
+
+<h1 id="电源模块——18650锂电池（尖帽）4枚和电池盒"><a href="#电源模块——18650锂电池（尖帽）4枚和电池盒" class="headerlink" title="电源模块——18650锂电池（尖帽）4枚和电池盒"></a>电源模块——18650锂电池（尖帽）4枚和电池盒</h1><ul>
+<li>不要反接电池。</li>
+<li>用四个电池是可以提供足够的功率，因为GSM模块联网时很耗电。</li>
+<li>电池盒要接<strong>稳压模块</strong>，电池长期不用时要拔出。</li>
+<li>电池是多少毫安的没有关系。</li>
+<li>如果有其它电池组，而不用本电池组，也可以，记得接稳压模块。</li>
+</ul>
+<table>
+    <tr>
+        <td ><center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_dianchi2.jpg" alt='18650电池' height="200"></center></td>
+        <td ><center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_dianchihe2.jpg"  alt='18650电池盒 四节电池' height="200"></center></td>
+    </tr>
+</table>
+
+<h1 id="稳压模块——3361AS车载电瓶DC5V稳压"><a href="#稳压模块——3361AS车载电瓶DC5V稳压" class="headerlink" title="稳压模块——3361AS车载电瓶DC5V稳压"></a>稳压模块——3361AS车载电瓶DC5V稳压</h1><ul>
+<li>用这种稳压模块是因为，它真的很稳……，而<strong>GSM模块电压一旦有一点不稳，或者功率不够，它就会不工作</strong>，非常狗的。</li>
+<li>上面有按钮，用起来很方便，但是电池盒连它时，正负极不要接错。</li>
+<li>输出那边有USB的母头，我当时是把一条USB数据线剪了接上去的，然后一切用电就从数据线这边出来了。</li>
+</ul>
+<div align=center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_3361AS.jpg" alt='3361AS稳压模块' width="300"/></div>
+
+<h1 id="小零件"><a href="#小零件" class="headerlink" title="小零件"></a>小零件</h1><h2 id="LED小模块"><a href="#LED小模块" class="headerlink" title="LED小模块"></a>LED小模块</h2><ul>
+<li>用一个集合的LED小模块，这种挺好玩的，没有的话，用普通LED+4.7k电阻也可以。</li>
+<li>作为信号是否传输成功的查看器，从Arduino传输到GSM模块，会传输11条，闪11次（在程序里可修改），如果GSM联网成功的话，传输成功意味着发送求救信息成功。</li>
+</ul>
+<div align=center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_LED.jpg" alt='LED' width="200"/></div>
+
+<h2 id="按钮"><a href="#按钮" class="headerlink" title="按钮"></a>按钮</h2><ul>
+<li>按钮，作为中断信号的发送器。</li>
+</ul>
+<div align=center><img src="https://gitee.com/atan2021/pic/raw/master/20210905_anniu.jpg" alt='按钮' width="200"/></div>
     </div>
 
     
@@ -289,7 +356,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://atan2021.gitee.io/2021/%E6%97%A5%E8%AE%B0/" title="日记">https://atan2021.gitee.io/2021/日记/</a>
+    <a href="https://atan2021.gitee.io/2021/%E2%80%9C%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86%E2%80%9D%E9%A1%B9%E7%9B%AE%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E7%A1%AC%E4%BB%B6%E9%80%89%E5%9E%8B/" title="“救心来了”项目硬件系统搭建（一）——硬件选型">https://atan2021.gitee.io/2021/“救心来了”项目硬件系统搭建（一）——硬件选型/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -300,7 +367,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E6%97%A5%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 日记</a>
+              <a href="/tags/%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86-%E9%A1%B9%E7%9B%AE/" rel="tag"><i class="fa fa-tag"></i> 救心来了 项目</a>
           </div>
 
         
@@ -309,12 +376,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/Markdown%E8%AF%AD%E6%B3%95%E6%B5%8B%E8%AF%95%E8%AE%B0%E5%BD%95/" rel="prev" title="测试记录">
-      <i class="fa fa-chevron-left"></i> 测试记录
+    <a href="/2021/%E6%97%A5%E8%AE%B0/" rel="prev" title="日记">
+      <i class="fa fa-chevron-left"></i> 日记
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/%E2%80%9C%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86%E2%80%9D%E9%A1%B9%E7%9B%AE%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%EF%BC%88%E4%B8%80%EF%BC%89%E2%80%94%E2%80%94%E7%A1%AC%E4%BB%B6%E9%80%89%E5%9E%8B/" rel="next" title="“救心来了”项目硬件系统搭建（一）——硬件选型">
-      “救心来了”项目硬件系统搭建（一）——硬件选型 <i class="fa fa-chevron-right"></i>
+    <a href="/2021/%E2%80%9C%E6%95%91%E5%BF%83%E6%9D%A5%E4%BA%86%E2%80%9D%E9%A1%B9%E7%9B%AE%E7%A1%AC%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%90%AD%E5%BB%BA%EF%BC%88%E4%BA%8C%EF%BC%89%E2%80%94%E2%80%94%E6%8E%A5%E7%BA%BF%E5%85%B7%E4%BD%93%E5%86%85%E5%AE%B9/" rel="next" title="“救心来了”项目硬件系统搭建（二）——接线具体内容">
+      “救心来了”项目硬件系统搭建（二）——接线具体内容 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -374,6 +441,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BB%E6%8E%A7%E5%88%B6%E5%99%A8%E2%80%94%E2%80%94Arduino-Uno"><span class="nav-number">1.</span> <span class="nav-text">主控制器——Arduino Uno</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GPS%E6%A8%A1%E5%9D%97%E2%80%94%E2%80%94NEO-6M%E5%92%8C%E5%8A%A0%E9%95%BF%E5%A4%A9%E7%BA%BF"><span class="nav-number">2.</span> <span class="nav-text">GPS模块——NEO-6M和加长天线</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GSM%E6%A8%A1%E5%9D%97%E2%80%94%E2%80%94SIM900A"><span class="nav-number">3.</span> <span class="nav-text">GSM模块——SIM900A</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E5%B1%8F%E6%A8%A1%E5%9D%97%E2%80%94%E2%80%941-77%E5%AF%B8TFT%E6%98%BE%E7%A4%BA%E5%B1%8F"><span class="nav-number">4.</span> <span class="nav-text">显示屏模块——1.77寸TFT显示屏</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%B5%E6%BA%90%E6%A8%A1%E5%9D%97%E2%80%94%E2%80%9418650%E9%94%82%E7%94%B5%E6%B1%A0%EF%BC%88%E5%B0%96%E5%B8%BD%EF%BC%894%E6%9E%9A%E5%92%8C%E7%94%B5%E6%B1%A0%E7%9B%92"><span class="nav-number">5.</span> <span class="nav-text">电源模块——18650锂电池（尖帽）4枚和电池盒</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A8%B3%E5%8E%8B%E6%A8%A1%E5%9D%97%E2%80%94%E2%80%943361AS%E8%BD%A6%E8%BD%BD%E7%94%B5%E7%93%B6DC5V%E7%A8%B3%E5%8E%8B"><span class="nav-number">6.</span> <span class="nav-text">稳压模块——3361AS车载电瓶DC5V稳压</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B0%8F%E9%9B%B6%E4%BB%B6"><span class="nav-number">7.</span> <span class="nav-text">小零件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#LED%E5%B0%8F%E6%A8%A1%E5%9D%97"><span class="nav-number">7.1.</span> <span class="nav-text">LED小模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8C%89%E9%92%AE"><span class="nav-number">7.2.</span> <span class="nav-text">按钮</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
